@@ -1,4 +1,4 @@
-# pcf-dotnet-environment-viewer
+# cf-dotnet-environment-viewer
 
 To push this app, you need to download the diego plugin and deploy to
 an environment with .NET support.
@@ -6,19 +6,19 @@ an environment with .NET support.
 
 The command to push.
 
-Push the app with no-start:
+From within the repo directory, push the app with no-start:
 ```
-cf push environment -s windows2012R2 -b binary_buildpack --no-start -p ./ViewEnvironment/
+cf push demoapp -s windows2012R2 -b binary_buildpack --no-start -p ./ViewEnvironment/
 ```
 
 Enable diego:
 ```
-cf enable-diego environment
+cf enable-diego demoapp
 ```
 
 Then Start:
 ```
-cf start environment
+cf start demoapp
 ```
 
 Once your app is pushed, you can navigate to the route and you will
@@ -29,5 +29,5 @@ After your first push, you can then rely on the manifest to provide
 the parameters and only assign the stack when you push changes:
 
 ```
-cf push environment -s windows2012R2
+cf push demoapp -s windows2012R2
 ```
