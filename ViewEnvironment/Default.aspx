@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pivotal CF Workshop | Welcome</title>
+    <title>.NET Sample App | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/modernizr.js"></script>
 </head>
@@ -17,14 +17,14 @@
     <nav class="top-bar" >
         <ul class="title-area">
             <li class="name">
-                <h1><a href="./">Pivotal CF</a></h1>
+                <h1><a href="./">Home</a></h1>
             </li>
         </ul>
     </nav>
 
     <div class="row">
         <div class="large-12 columns">
-            <h3>Welcome to Pivotal CF</h3>
+            <h3>Welcome to CF</h3>
             <hr/>
         </div>
 
