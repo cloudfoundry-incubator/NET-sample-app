@@ -19,6 +19,17 @@ cf enable-diego environment
 cf start environment
 ```
 
+If you're having this problem pushing the application:
+```
+FAILED
+Server error, status code: 400, error code: 210003, message: The host is taken: environment
+```
+try adding ```--random-route``` to the ```cf push``` command:
+```
+cf push environment -s windows2012R2 -b hwc_buildpack --no-start -p ./ViewEnvironment/ --random-route
+```
+to avoid the host names clashing.
+
 Once your app is pushed, you can navigate to the app's URL and you will
 see all the VCAP variables.  Add ?all= to get all the system variables
 too.
